@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -32,7 +34,62 @@
                     <view key="view" contentMode="scaleToFill" id="bed-0G-7Y4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Et-iN-NOb">
+                                <rect key="frame" x="266" y="20" width="67" height="558.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cei-LO-yHn">
+                                <rect key="frame" x="10" y="366" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91A-TQ-lt2">
+                                <rect key="frame" x="557" y="366" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="9Et-iN-NOb" firstAttribute="bottom" secondItem="AAW-ad-Ojd" secondAttribute="top" multiplier="0.33" constant="10" id="0JJ-G0-8KZ"/>
+                            <constraint firstAttribute="centerY" secondItem="9Et-iN-NOb" secondAttribute="centerY" id="1sV-38-UEt"/>
+                            <constraint firstAttribute="top" secondItem="91A-TQ-lt2" secondAttribute="bottom" multiplier="3.0303" id="31b-uR-zMQ"/>
+                            <constraint firstItem="Cei-LO-yHn" firstAttribute="top" secondItem="91A-TQ-lt2" secondAttribute="bottom" constant="-30" id="6lH-6W-mHh"/>
+                            <constraint firstItem="9Et-iN-NOb" firstAttribute="top" secondItem="dBR-Lw-hBy" secondAttribute="bottom" id="80v-kJ-SjL"/>
+                            <constraint firstItem="9Et-iN-NOb" firstAttribute="leading" secondItem="bed-0G-7Y4" secondAttribute="leading" id="YU2-Bb-Jpi"/>
+                            <constraint firstItem="Cei-LO-yHn" firstAttribute="bottom" secondItem="AAW-ad-Ojd" secondAttribute="bottom" multiplier="0.66" id="YgL-qx-NgH"/>
+                            <constraint firstAttribute="trailing" secondItem="91A-TQ-lt2" secondAttribute="trailing" constant="10" id="ax2-Qu-5Qu"/>
+                            <constraint firstAttribute="centerX" secondItem="9Et-iN-NOb" secondAttribute="centerX" id="gEc-HS-Hor"/>
+                            <constraint firstItem="Cei-LO-yHn" firstAttribute="leading" secondItem="bed-0G-7Y4" secondAttribute="leading" constant="10" id="icR-XH-W2E"/>
+                            <constraint firstItem="91A-TQ-lt2" firstAttribute="centerX" secondItem="bed-0G-7Y4" secondAttribute="centerX" constant="-10" id="jJI-qy-mKV"/>
+                            <constraint firstItem="9Et-iN-NOb" firstAttribute="leading" secondItem="bed-0G-7Y4" secondAttribute="leading" id="lUW-wK-4dQ"/>
+                            <constraint firstAttribute="centerX" secondItem="9Et-iN-NOb" secondAttribute="centerX" id="nsn-5A-69R"/>
+                            <constraint firstItem="91A-TQ-lt2" firstAttribute="trailing" secondItem="bed-0G-7Y4" secondAttribute="trailingMargin" id="qdm-fz-Whs"/>
+                            <constraint firstAttribute="centerY" secondItem="9Et-iN-NOb" secondAttribute="centerY" id="rNN-Uk-Xvg"/>
+                            <constraint firstAttribute="centerX" secondItem="Cei-LO-yHn" secondAttribute="centerX" constant="260.5" id="sg2-mS-Wtc"/>
+                            <constraint firstItem="AAW-ad-Ojd" firstAttribute="top" secondItem="91A-TQ-lt2" secondAttribute="bottom" constant="204" id="udA-qu-H7a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0JJ-G0-8KZ"/>
+                                <exclude reference="YU2-Bb-Jpi"/>
+                                <exclude reference="lUW-wK-4dQ"/>
+                                <exclude reference="nsn-5A-69R"/>
+                                <exclude reference="rNN-Uk-Xvg"/>
+                                <exclude reference="sg2-mS-Wtc"/>
+                                <exclude reference="udA-qu-H7a"/>
+                                <exclude reference="31b-uR-zMQ"/>
+                                <exclude reference="jJI-qy-mKV"/>
+                                <exclude reference="qdm-fz-Whs"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhh-EN-UZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
