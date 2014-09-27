@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ud6-1p-C34">
+            <objects>
+                <viewController id="RxI-e5-IPP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aSJ-0g-lDF"/>
+                        <viewControllerLayoutGuide type="bottom" id="bDS-hX-G7L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HFA-5G-MQw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIa-KE-k3t">
+                                <rect key="frame" x="266" y="20" width="67" height="558.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j03-61-ctr">
+                                <rect key="frame" x="10" y="366" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gV-nd-uj2">
+                                <rect key="frame" x="557" y="366" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="jIa-KE-k3t" firstAttribute="top" secondItem="aSJ-0g-lDF" secondAttribute="bottom" id="4Te-6u-Ton"/>
+                            <constraint firstAttribute="centerY" secondItem="jIa-KE-k3t" secondAttribute="centerY" id="6fQ-Gz-d3e"/>
+                            <constraint firstAttribute="centerX" secondItem="jIa-KE-k3t" secondAttribute="centerX" id="Bwy-FP-Pmi"/>
+                            <constraint firstItem="j03-61-ctr" firstAttribute="leading" secondItem="HFA-5G-MQw" secondAttribute="leading" constant="10" id="I71-pB-zQf"/>
+                            <constraint firstItem="bDS-hX-G7L" firstAttribute="top" secondItem="3gV-nd-uj2" secondAttribute="bottom" constant="204" id="L9e-BY-A7z"/>
+                            <constraint firstItem="jIa-KE-k3t" firstAttribute="leading" secondItem="HFA-5G-MQw" secondAttribute="leading" id="QT3-tY-gWJ"/>
+                            <constraint firstAttribute="centerX" secondItem="jIa-KE-k3t" secondAttribute="centerX" id="QcX-De-KXf"/>
+                            <constraint firstAttribute="centerY" secondItem="jIa-KE-k3t" secondAttribute="centerY" id="TSI-mV-JB4"/>
+                            <constraint firstAttribute="centerX" secondItem="j03-61-ctr" secondAttribute="centerX" constant="260.5" id="W2L-Dd-Iti"/>
+                            <constraint firstItem="jIa-KE-k3t" firstAttribute="leading" secondItem="HFA-5G-MQw" secondAttribute="leading" id="YWw-tF-vfc"/>
+                            <constraint firstItem="jIa-KE-k3t" firstAttribute="bottom" secondItem="bDS-hX-G7L" secondAttribute="top" multiplier="0.33" constant="10" id="iOO-FR-jKU"/>
+                            <constraint firstItem="j03-61-ctr" firstAttribute="top" secondItem="3gV-nd-uj2" secondAttribute="bottom" constant="-30" id="iPj-eY-0tD"/>
+                            <constraint firstAttribute="trailing" secondItem="3gV-nd-uj2" secondAttribute="trailing" constant="10" id="lwC-NR-2xT"/>
+                            <constraint firstItem="j03-61-ctr" firstAttribute="bottom" secondItem="bDS-hX-G7L" secondAttribute="bottom" multiplier="0.66" id="nXe-zx-P25"/>
+                            <constraint firstItem="3gV-nd-uj2" firstAttribute="trailing" secondItem="HFA-5G-MQw" secondAttribute="trailingMargin" id="nzB-Nk-NKe"/>
+                            <constraint firstItem="3gV-nd-uj2" firstAttribute="centerX" secondItem="HFA-5G-MQw" secondAttribute="centerX" constant="-10" id="wGQ-Ox-kXT"/>
+                            <constraint firstAttribute="top" secondItem="3gV-nd-uj2" secondAttribute="bottom" multiplier="3.0303" id="ytb-Pr-oty"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iOO-FR-jKU"/>
+                                <exclude reference="YWw-tF-vfc"/>
+                                <exclude reference="QT3-tY-gWJ"/>
+                                <exclude reference="Bwy-FP-Pmi"/>
+                                <exclude reference="TSI-mV-JB4"/>
+                                <exclude reference="W2L-Dd-Iti"/>
+                                <exclude reference="L9e-BY-A7z"/>
+                                <exclude reference="ytb-Pr-oty"/>
+                                <exclude reference="wGQ-Ox-kXT"/>
+                                <exclude reference="nzB-Nk-NKe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxo-Su-x9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1076"/>
+        </scene>
+    </scenes>
+</document>
