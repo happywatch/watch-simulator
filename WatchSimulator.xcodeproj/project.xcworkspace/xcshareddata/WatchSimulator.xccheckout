@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>393FFC55-0171-457D-A5BD-86382E326BBB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WatchSimulator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B0557BC10F67E6029B002C3F6B3F5EE8931D6E79</key>
+		<string>https://github.com/happywatch/watch-simulator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WatchSimulator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B0557BC10F67E6029B002C3F6B3F5EE8931D6E79</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/happywatch/watch-simulator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B0557BC10F67E6029B002C3F6B3F5EE8931D6E79</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B0557BC10F67E6029B002C3F6B3F5EE8931D6E79</string>
+			<key>IDESourceControlWCCName</key>
+			<string>watch-simulator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
