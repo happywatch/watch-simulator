@@ -6,10 +6,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--App View Controller-->
         <scene sceneID="Ud6-1p-C34">
             <objects>
-                <viewController id="RxI-e5-IPP" sceneMemberID="viewController">
+                <viewController id="RxI-e5-IPP" customClass="AppViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aSJ-0g-lDF"/>
                         <viewControllerLayoutGuide type="bottom" id="bDS-hX-G7L"/>
@@ -30,6 +30,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startClicked" destination="RxI-e5-IPP" eventType="touchUpInside" id="QBo-Va-xgH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gV-nd-uj2">
                                 <rect key="frame" x="557" y="366" width="33" height="30"/>
@@ -37,6 +40,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="stopClicked" destination="RxI-e5-IPP" eventType="touchUpInside" id="xIq-9x-F2x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -61,19 +67,22 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="iOO-FR-jKU"/>
-                                <exclude reference="YWw-tF-vfc"/>
-                                <exclude reference="QT3-tY-gWJ"/>
                                 <exclude reference="Bwy-FP-Pmi"/>
+                                <exclude reference="QT3-tY-gWJ"/>
                                 <exclude reference="TSI-mV-JB4"/>
+                                <exclude reference="YWw-tF-vfc"/>
+                                <exclude reference="iOO-FR-jKU"/>
                                 <exclude reference="W2L-Dd-Iti"/>
                                 <exclude reference="L9e-BY-A7z"/>
-                                <exclude reference="ytb-Pr-oty"/>
-                                <exclude reference="wGQ-Ox-kXT"/>
                                 <exclude reference="nzB-Nk-NKe"/>
+                                <exclude reference="wGQ-Ox-kXT"/>
+                                <exclude reference="ytb-Pr-oty"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="jIa-KE-k3t" id="Oiz-12-QRZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxo-Su-x9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
