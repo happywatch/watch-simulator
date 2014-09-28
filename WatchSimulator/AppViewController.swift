@@ -15,15 +15,15 @@ class AppViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     
-    @IBAction func startClicked() {
+    @IBAction func start() {
+        
         if !timer.valid {
-        let aSelector : Selector = "updateTime"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
-        startTime = NSDate.timeIntervalSinceReferenceDate()
+            let aSelector : Selector = "updateTime"
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+            startTime = NSDate.timeIntervalSinceReferenceDate()
         }
     }
-    
-    @IBAction func stopClicked() {
+    @IBAction func stop() {
         timer.invalidate()
     }
     
