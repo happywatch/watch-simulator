@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		7696904019EB08F400F133C8 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696903F19EB08F400F133C8 /* AppViewController.swift */; };
 		7696904219EB0FE000F133C8 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696904119EB0FE000F133C8 /* Gradients.swift */; };
-=======
-		6C3F926819D7661D00C9D640 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F926719D7661D00C9D640 /* AppViewController.swift */; };
-		6C3F926A19D76EC900C9D640 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C3F926919D76EC900C9D640 /* AppView.xib */; };
->>>>>>> FETCH_HEAD
 		76FECB4719D742CA00639284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FECB4619D742CA00639284 /* AppDelegate.swift */; };
 		76FECB4919D742CA00639284 /* HardwareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FECB4819D742CA00639284 /* HardwareViewController.swift */; };
 		76FECB4C19D742CA00639284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FECB4A19D742CA00639284 /* Main.storyboard */; };
@@ -33,13 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
 		7696903F19EB08F400F133C8 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		7696904119EB0FE000F133C8 /* Gradients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
-=======
-		6C3F926719D7661D00C9D640 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
-		6C3F926919D76EC900C9D640 /* AppView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppView.xib; sourceTree = "<group>"; };
->>>>>>> FETCH_HEAD
 		76FECB4119D742C900639284 /* WatchSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FECB4519D742C900639284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FECB4619D742CA00639284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,11 +86,6 @@
 				7696903F19EB08F400F133C8 /* AppViewController.swift */,
 				7696904119EB0FE000F133C8 /* Gradients.swift */,
 				76FECB4A19D742CA00639284 /* Main.storyboard */,
-<<<<<<< HEAD
-=======
-				6C3F926919D76EC900C9D640 /* AppView.xib */,
-				6C3F926719D7661D00C9D640 /* AppViewController.swift */,
->>>>>>> FETCH_HEAD
 				76FECB4D19D742CA00639284 /* Images.xcassets */,
 				76FECB4F19D742CA00639284 /* LaunchScreen.xib */,
 				76FECB4419D742C900639284 /* Supporting Files */,
@@ -215,7 +200,6 @@
 			files = (
 				76FECB4C19D742CA00639284 /* Main.storyboard in Resources */,
 				76FECB5119D742CA00639284 /* LaunchScreen.xib in Resources */,
-				6C3F926A19D76EC900C9D640 /* AppView.xib in Resources */,
 				76FECB4E19D742CA00639284 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,12 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				76FECB4919D742CA00639284 /* HardwareViewController.swift in Sources */,
-=======
-				6C3F926819D7661D00C9D640 /* AppViewController.swift in Sources */,
-				76FECB4919D742CA00639284 /* ViewController.swift in Sources */,
->>>>>>> FETCH_HEAD
 				76FECB4719D742CA00639284 /* AppDelegate.swift in Sources */,
 				7696904019EB08F400F133C8 /* AppViewController.swift in Sources */,
 				7696904219EB0FE000F133C8 /* Gradients.swift in Sources */,
