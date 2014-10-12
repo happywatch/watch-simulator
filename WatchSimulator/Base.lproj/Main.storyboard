@@ -42,6 +42,7 @@
             </objects>
         </scene>
         <!--App View Controller-->
+<<<<<<< HEAD
         <scene sceneID="y1W-zb-c64">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pc4-Wi-Ery" userLabel="App View Controller" customClass="AppViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,10 +58,43 @@
                                 <rect key="frame" x="0.0" y="0.0" width="142" height="178"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="0">
+=======
+        <scene sceneID="htH-bo-FMB">
+            <objects>
+                <viewController id="Xdk-S3-gIx" customClass="AppViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uDc-s1-uYc"/>
+                        <viewControllerLayoutGuide type="bottom" id="03S-6n-S2h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2FA-9b-xX6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbG-3h-yB1">
+                                <rect key="frame" x="266" y="290" width="67" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvT-TX-wi1">
+                                <rect key="frame" x="25" y="370" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start" destination="Xdk-S3-gIx" eventType="touchUpInside" id="kmj-h2-fgd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pC4-pZ-LEC">
+                                <rect key="frame" x="542" y="370" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+>>>>>>> FETCH_HEAD
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+<<<<<<< HEAD
                                     <action selector="buttonTapped:" destination="Pc4-Wi-Ery" eventType="touchUpInside" id="ERf-Sz-chK"/>
                                 </connections>
                             </button>
@@ -83,6 +117,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiz-5t-hns" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="696" y="136"/>
+=======
+                                    <action selector="stop" destination="Xdk-S3-gIx" eventType="touchUpInside" id="SbN-cg-Xb7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pC4-pZ-LEC" secondAttribute="trailing" constant="34" id="9Gb-LL-dTm"/>
+                            <constraint firstItem="pC4-pZ-LEC" firstAttribute="bottom" secondItem="GvT-TX-wi1" secondAttribute="bottom" id="DPf-q3-cad"/>
+                            <constraint firstAttribute="centerX" secondItem="hbG-3h-yB1" secondAttribute="centerX" id="KaS-tq-Nv8"/>
+                            <constraint firstItem="03S-6n-S2h" firstAttribute="top" secondItem="GvT-TX-wi1" secondAttribute="bottom" constant="200" id="MF8-jm-hN9"/>
+                            <constraint firstItem="03S-6n-S2h" firstAttribute="top" secondItem="GvT-TX-wi1" secondAttribute="bottom" constant="400" id="Taa-CT-EZq"/>
+                            <constraint firstAttribute="centerY" secondItem="hbG-3h-yB1" secondAttribute="centerY" id="VN0-BL-LjV"/>
+                            <constraint firstItem="GvT-TX-wi1" firstAttribute="leading" secondItem="2FA-9b-xX6" secondAttribute="leading" constant="25" id="a6D-HB-Ef4"/>
+                            <constraint firstItem="03S-6n-S2h" firstAttribute="top" secondItem="GvT-TX-wi1" secondAttribute="bottom" constant="200" id="fi1-JA-Yxr"/>
+                            <constraint firstAttribute="trailing" secondItem="pC4-pZ-LEC" secondAttribute="trailing" constant="25" id="wW5-zg-ylr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="hbG-3h-yB1" id="FRw-PJ-wMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9J-Cz-ZIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="137"/>
+>>>>>>> FETCH_HEAD
         </scene>
     </scenes>
     <resources>
