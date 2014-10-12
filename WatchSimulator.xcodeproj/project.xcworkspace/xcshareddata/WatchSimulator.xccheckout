@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>393FFC55-0171-457D-A5BD-86382E326BBB</string>
+	<string>FCC00754-9FDD-4638-83ED-15EF510FE905</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WatchSimulator</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>B0557BC10F67E6029B002C3F6B3F5EE8931D6E79</string>
 			<key>IDESourceControlWCCName</key>
-			<string>watch-simulator</string>
+			<string>WatchSimulator</string>
 		</dict>
 	</array>
 </dict>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="HardwareViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,22 +16,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hardware" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-o1-weg">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3KK-9G-ked">
+                                <rect key="frame" x="224" y="211" width="142" height="178"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Pc4-Wi-Ery" kind="embed" id="MgS-zo-bTl"/>
+                                </connections>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hardware-screen-gloss" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-o1-weg">
                                 <rect key="frame" x="190" y="178" width="220" height="244"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96227031946182251" green="0.96224147081375122" blue="0.96225786209106445" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="3KK-9G-ked" firstAttribute="trailing" secondItem="uFs-o1-weg" secondAttribute="trailing" constant="-44" id="FNf-hs-MKJ"/>
                             <constraint firstAttribute="centerY" secondItem="uFs-o1-weg" secondAttribute="centerY" id="Zpk-ur-WqD"/>
                             <constraint firstAttribute="centerX" secondItem="uFs-o1-weg" secondAttribute="centerX" id="c6L-Sq-wtL"/>
+                            <constraint firstItem="3KK-9G-ked" firstAttribute="bottom" secondItem="uFs-o1-weg" secondAttribute="bottom" constant="-33" id="dPY-Q1-aFK"/>
+                            <constraint firstItem="3KK-9G-ked" firstAttribute="top" secondItem="uFs-o1-weg" secondAttribute="top" constant="33" id="mga-ue-XBC"/>
+                            <constraint firstItem="3KK-9G-ked" firstAttribute="leading" secondItem="uFs-o1-weg" secondAttribute="leading" constant="34" id="nv5-Xp-bC6"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--App View Controller-->
+        <scene sceneID="y1W-zb-c64">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pc4-Wi-Ery" userLabel="App View Controller" customClass="AppViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ks7-5J-ELL"/>
+                        <viewControllerLayoutGuide type="bottom" id="TBO-O8-a32"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EvY-UU-o4n">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="178"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBu-eh-q2S" userLabel="Tap Button">
+                                <rect key="frame" x="0.0" y="0.0" width="142" height="178"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Pc4-Wi-Ery" eventType="touchUpInside" id="ERf-Sz-chK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TBO-O8-a32" firstAttribute="top" secondItem="hBu-eh-q2S" secondAttribute="bottom" id="CZE-UG-JY1"/>
+                            <constraint firstItem="hBu-eh-q2S" firstAttribute="top" secondItem="Ks7-5J-ELL" secondAttribute="bottom" id="IkH-cd-8EM"/>
+                            <constraint firstAttribute="trailing" secondItem="hBu-eh-q2S" secondAttribute="trailing" id="ZJe-wU-15a"/>
+                            <constraint firstItem="hBu-eh-q2S" firstAttribute="leading" secondItem="EvY-UU-o4n" secondAttribute="leading" id="gmh-HG-1DB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiz-5t-hns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="136"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="hardware" width="220" height="244"/>
+        <image name="hardware-screen-gloss" width="220" height="244"/>
     </resources>
 </document>
