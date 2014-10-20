@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7696904019EB08F400F133C8 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696903F19EB08F400F133C8 /* AppViewController.swift */; };
-		7696904219EB0FE000F133C8 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696904119EB0FE000F133C8 /* Gradients.swift */; };
+		7696904219EB0FE000F133C8 /* GradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696904119EB0FE000F133C8 /* GradientGenerator.swift */; };
 		76FECB4719D742CA00639284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FECB4619D742CA00639284 /* AppDelegate.swift */; };
 		76FECB4919D742CA00639284 /* HardwareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FECB4819D742CA00639284 /* HardwareViewController.swift */; };
 		76FECB4C19D742CA00639284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FECB4A19D742CA00639284 /* Main.storyboard */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		7696903F19EB08F400F133C8 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
-		7696904119EB0FE000F133C8 /* Gradients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		7696904119EB0FE000F133C8 /* GradientGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientGenerator.swift; sourceTree = "<group>"; };
 		76FECB4119D742C900639284 /* WatchSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FECB4519D742C900639284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FECB4619D742CA00639284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				76FECB4619D742CA00639284 /* AppDelegate.swift */,
 				76FECB4819D742CA00639284 /* HardwareViewController.swift */,
 				7696903F19EB08F400F133C8 /* AppViewController.swift */,
-				7696904119EB0FE000F133C8 /* Gradients.swift */,
+				7696904119EB0FE000F133C8 /* GradientGenerator.swift */,
 				76FECB4A19D742CA00639284 /* Main.storyboard */,
 				76FECB4D19D742CA00639284 /* Images.xcassets */,
 				76FECB4F19D742CA00639284 /* LaunchScreen.xib */,
@@ -221,7 +221,7 @@
 				76FECB4919D742CA00639284 /* HardwareViewController.swift in Sources */,
 				76FECB4719D742CA00639284 /* AppDelegate.swift in Sources */,
 				7696904019EB08F400F133C8 /* AppViewController.swift in Sources */,
-				7696904219EB0FE000F133C8 /* Gradients.swift in Sources */,
+				7696904219EB0FE000F133C8 /* GradientGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

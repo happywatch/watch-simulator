@@ -14,11 +14,15 @@ class AppViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any more setup after this
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         initAppearance()
     }
     
     func initAppearance() -> Void {
-        let background = CAGradientLayer().turquoiseColor()
+        let background = CAGradientLayer().generate(.Turquoise)
         background.frame = self.view.bounds
         self.view.layer.insertSublayer(background, atIndex: 0)
     }
