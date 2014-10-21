@@ -9,7 +9,7 @@ Just another way to be ahead of the game. Can't wait to see what you build with 
 
 ![Apple Watch simulator in Xcode](http://happy.watch/s/watch-simulator-xcode.png)
 
-A sample app built with the simulator: Heartbeat
+A demo app built with the simulator: *Heartbeat*
 
 [![Play Video on YouTube](http://happy.watch/s/heartbeat-apple-watch-app-youtube-video.jpg)](http://bit.ly/heartbeat-video)
 
