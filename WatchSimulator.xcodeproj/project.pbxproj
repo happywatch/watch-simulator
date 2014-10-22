@@ -15,6 +15,8 @@
 		76FECB4E19D742CA00639284 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FECB4D19D742CA00639284 /* Images.xcassets */; };
 		76FECB5119D742CA00639284 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FECB4F19D742CA00639284 /* LaunchScreen.xib */; };
 		76FECB5D19D742CA00639284 /* WatchSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FECB5C19D742CA00639284 /* WatchSimulatorTests.swift */; };
+		8142DD4C19F795AE001FE3E7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142DD4B19F795AE001FE3E7 /* MenuViewController.swift */; };
+		81C9AD5319F793B400475C49 /* JBForceTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9AD5219F793B400475C49 /* JBForceTouchGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		76FECB5619D742CA00639284 /* WatchSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FECB5B19D742CA00639284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FECB5C19D742CA00639284 /* WatchSimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSimulatorTests.swift; sourceTree = "<group>"; };
+		8142DD4B19F795AE001FE3E7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		81C9AD5119F793B400475C49 /* JBForceTouchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBForceTouchGestureRecognizer.h; sourceTree = "<group>"; };
+		81C9AD5219F793B400475C49 /* JBForceTouchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBForceTouchGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +89,12 @@
 				76FECB4619D742CA00639284 /* AppDelegate.swift */,
 				76FECB4819D742CA00639284 /* HardwareViewController.swift */,
 				7696903F19EB08F400F133C8 /* AppViewController.swift */,
+				8142DD4B19F795AE001FE3E7 /* MenuViewController.swift */,
 				7696904119EB0FE000F133C8 /* GradientGenerator.swift */,
 				76FECB4A19D742CA00639284 /* Main.storyboard */,
 				76FECB4D19D742CA00639284 /* Images.xcassets */,
 				76FECB4F19D742CA00639284 /* LaunchScreen.xib */,
+				81C9AD5419F793C800475C49 /* Force Touch */,
 				76FECB4419D742C900639284 /* Supporting Files */,
 			);
 			path = WatchSimulator;
@@ -116,6 +123,15 @@
 				76FECB5B19D742CA00639284 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81C9AD5419F793C800475C49 /* Force Touch */ = {
+			isa = PBXGroup;
+			children = (
+				81C9AD5119F793B400475C49 /* JBForceTouchGestureRecognizer.h */,
+				81C9AD5219F793B400475C49 /* JBForceTouchGestureRecognizer.m */,
+			);
+			name = "Force Touch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FECB4919D742CA00639284 /* HardwareViewController.swift in Sources */,
+				8142DD4C19F795AE001FE3E7 /* MenuViewController.swift in Sources */,
+				81C9AD5319F793B400475C49 /* JBForceTouchGestureRecognizer.m in Sources */,
 				76FECB4719D742CA00639284 /* AppDelegate.swift in Sources */,
 				7696904019EB08F400F133C8 /* AppViewController.swift in Sources */,
 				7696904219EB0FE000F133C8 /* GradientGenerator.swift in Sources */,

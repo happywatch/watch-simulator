@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -26,7 +27,7 @@
                                 <rect key="frame" x="223" y="210" width="144" height="180"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3KK-9G-ked">
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3KK-9G-ked">
                                 <rect key="frame" x="224" y="211" width="142" height="178"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -60,7 +61,7 @@
         <!--App View Controller-->
         <scene sceneID="y1W-zb-c64">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pc4-Wi-Ery" userLabel="App View Controller" customClass="AppViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" id="Pc4-Wi-Ery" userLabel="App View Controller" customClass="AppViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ks7-5J-ELL"/>
                         <viewControllerLayoutGuide type="bottom" id="TBO-O8-a32"/>
@@ -93,12 +94,79 @@
                                 <integer key="value" value="4"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZQH-Zz-JSZ" id="VlZ-xQ-IaD"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <segue destination="aK7-Vi-SaM" kind="presentation" identifier="menu" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="dAL-w8-DWw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiz-5t-hns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="ZQH-Zz-JSZ" customClass="JBForceTouchGestureRecognizer">
+                    <connections>
+                        <action selector="forceTouch:" destination="Pc4-Wi-Ery" id="0nC-L1-VxC"/>
+                    </connections>
+                </customObject>
             </objects>
-            <point key="canvasLocation" x="696" y="136"/>
+            <point key="canvasLocation" x="1076" y="234"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="Ocg-qV-2bO">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="aK7-Vi-SaM" customClass="MenuViewController" customModule="WatchSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RJe-JZ-dYc"/>
+                        <viewControllerLayoutGuide type="bottom" id="HPV-YX-ETZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EeX-iZ-b8C">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="178"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCf-Q0-nKx">
+                                <rect key="frame" x="16" y="37" width="110" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dxd-7b-nQf"/>
+                                </constraints>
+                                <state key="normal" title="Menu 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1Tapped:" destination="aK7-Vi-SaM" eventType="touchUpInside" id="Xsn-wl-W5S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88Y-ta-Kew">
+                                <rect key="frame" x="16" y="97" width="110" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3Jm-Zq-gkL"/>
+                                </constraints>
+                                <state key="normal" title="Menu 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2Tapped:" destination="aK7-Vi-SaM" eventType="touchUpInside" id="CN7-sh-PPI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BCf-Q0-nKx" secondAttribute="trailing" id="4k4-GJ-JRe"/>
+                            <constraint firstAttribute="centerX" secondItem="BCf-Q0-nKx" secondAttribute="centerX" id="9p5-aw-pRi"/>
+                            <constraint firstAttribute="centerY" secondItem="BCf-Q0-nKx" secondAttribute="centerY" constant="30" id="HS6-jj-dLZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="88Y-ta-Kew" secondAttribute="trailing" id="Ofu-uP-ajU"/>
+                            <constraint firstAttribute="centerX" secondItem="88Y-ta-Kew" secondAttribute="centerX" id="h7v-ry-qlj"/>
+                            <constraint firstItem="88Y-ta-Kew" firstAttribute="leading" secondItem="EeX-iZ-b8C" secondAttribute="leadingMargin" id="k96-yo-1Fn"/>
+                            <constraint firstItem="BCf-Q0-nKx" firstAttribute="leading" secondItem="EeX-iZ-b8C" secondAttribute="leadingMargin" id="vTC-KA-63w"/>
+                            <constraint firstAttribute="centerY" secondItem="88Y-ta-Kew" secondAttribute="centerY" constant="-30" id="ycy-2d-jZT"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="142" height="178"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TId-j2-zFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="589"/>
         </scene>
     </scenes>
     <resources>
