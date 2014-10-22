@@ -31,4 +31,8 @@ class AppViewController: UIViewController {
         sender.setTitle("\(++numTaps)", forState: .Normal)
     }
 
+    @IBAction func forceTouch(sender: UIButton) {
+        self.performSegueWithIdentifier("menu", sender: self)
+    }
+
 }
